@@ -12,7 +12,7 @@ from langchain_core.prompts import ChatPromptTemplate, MessagesPlaceholder
 from operator import itemgetter
 
 # Load environment variables
-load_dotenv()
+#load_dotenv()
 #load_dotenv(r"C:\Users\Vikrant Vivek Deo\Documents\Jai_Ganesh\Hackathon\Dobot_Project\dobot-python\venv\.env")
 openai_api_key = os.getenv("OPENAI_API_KEY")
 
