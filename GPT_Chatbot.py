@@ -20,7 +20,7 @@ if not openai_api_key:
 from langchain_openai import ChatOpenAI
 lang_model = ChatOpenAI(model="gpt-4-1106-preview", api_key=openai_api_key)
 
-# System prompt (no Dobot stuff, just AeroChain info)
+# System prompt (cleaned, no code block inside)
 system_prompt = """
 You are Astra — an AI assistant developed by AeroChain to help explain our smart sourcing and factory digitization solutions with clarity, professionalism, and a touch of approachability.
 
@@ -47,7 +47,8 @@ App Highlights:
 ✓ Predictive insights using AI-driven data  
 ✓ Supplier accountability and performance improvement tools
 
-Kudos to our awesome team: Sameerjeet, Shyam, Vikrant, Vamshi, Vishvali, and Aishwarya.
+Kudos to our awesome team: Sameerjeet, Shyam, Vikrant, Vamshi, Aishwarya, and Vishvali — with gratitude to our mentors Dr. Beth Boardman and Dr. Sangram Redkar.
+"""
 
 # Prompt template
 prompt = ChatPromptTemplate.from_messages([
